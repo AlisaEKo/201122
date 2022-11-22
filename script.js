@@ -2,34 +2,34 @@
 
 // // this is a matrix n x n - מטריצה ריבועית
 
-// // function matrixBuilder(size){
-// //     let matrix = [];
-// // //     for (let row = 0; row < size; row++) {
-// // //         let inner_arr = []
-// // //         for(let col=0; col < size; col++){
-// // //             inner_arr.push(0);
-// // //         }
-// // //         matrix.push(inner_arr)
-// // //     }
-// // //     return matrix
-// // // }
+// function matrixBuilder(size){
+//     let matrix = [];
+//     for (let row = 0; row < size; row++) {
+//         let inner_arr = []
+//         for(let col=0; col < size; col++){
+//             inner_arr.push(0);
+//         }
+//         matrix.push(inner_arr)
+//     }
+//     return matrix
+// }
 
-// // // let m = matrixBuilder(5)
+// let m = matrixBuilder()
 // // // console.log(m)
 
-// // function matrixBuilder2(size, arguments=0){
-// //     let matrix = [];
-// //     for (let row = 0; row < size; row++) {
-// //         let inner_arr = []
-// //         for(let col=0; col < size; col++){
-// //             inner_arr.push(arguments);
-// //         }
-// //         matrix.push(inner_arr)
-// //     }
-// //     return matrix
-// // }
+function matrixBiulder(size=3, val=0){
+    let matrix = [];
+    for (let row = 0; row < size; row++) {
+        let inner_arr = []
+        for(let col=0; col < size; col++){
+            inner_arr.push(val);
+        }
+        matrix.push(inner_arr)
+    }
+    return matrix
+}
 
-// // let n = matrixBuilder2(8, "x")
+let m = matrixBiulder()
 // // console.log(n)
 
 // // not like this***
@@ -66,28 +66,25 @@
 //         for(let col=0; col < i; col++){
 //             inner_arr.push(val);
 //             let j = 1;
-            
 //                     inner_arr.push(j);
-                
 //                 matrix.push(inner_arr)
 //             }
-        
 //         matrix.push(inner_arr)
 //     }
 //     return matrix
 // }
 
 
-function printMat(m){
-    for (let i = 0; i < m.length; i++){
-        console.log(m[i])
-    }
-}
+// function printMat(m){
+//     for (let i = 0; i < m.length; i++){
+//         console.log(m[i])
+//     }
+// }
 
 
-printMat(3)
+// printMat(3)
 
-function diagonal(m, val = 1) {
+// function diagonal(m, val = 1) {
     // for (let i = 0; i < m.length; i++){
     //     m[i][i] = val;
     
@@ -109,7 +106,7 @@ function diagonal(m, val = 1) {
         
         while (i < m.length) {
             m[i][i] = val;
-            console.log(m[i])
+            console.log(...m[i])
             i++
         }
     }
