@@ -123,3 +123,10 @@ let m = matrixBiulder()
           
     // }
     // diagonal(matrixBiulder(5, 0))
+
+
+    function diagonal(m, val=1){
+    for(let i = 0; i<m.length; i++ ){
+        setIndex(m,i,i,1)
+    }
+}
